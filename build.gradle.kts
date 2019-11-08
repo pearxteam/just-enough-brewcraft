@@ -1,6 +1,9 @@
 import com.github.breadmoirai.githubreleaseplugin.GithubReleaseExtension
 import com.matthewprenger.cursegradle.CurseExtension
 import com.matthewprenger.cursegradle.CurseProject
+import com.matthewprenger.cursegradle.CurseArtifact
+import com.matthewprenger.cursegradle.CurseRelation
+import com.matthewprenger.cursegradle.Options
 import net.minecraftforge.gradle.user.UserBaseExtension
 
 plugins {
@@ -38,7 +41,7 @@ val curseforgeApiKey: String? by project
 val devBuildNumber: String? by project
 val githubAccessToken: String? by project
 
-version = if(devBuildNumber != null) "$modVersion-dev-$devBuildNumber" else modVersion
+version = if (devBuildNumber != null) "$modVersion-dev-$devBuildNumber" else modVersion
 group = "net.pearx.jebc"
 description = modDescription
 
@@ -100,6 +103,17 @@ configure<CurseExtension> {
         id = curseforgeProjectId
         releaseType = "release"
         changelog = modChangelog
+        relations(closureOf<CurseRelation> {
+            requiredDependency("jei")
+            requiredDependency("pams-harvestcraft")
+        })
+        mainArtifact(tasks.named("jar").get(), closureOf<CurseArtifact> {
+            displayName = "[$minecraftVersion] Just Enough BrewCraft $version"
+        })
+        options(closureOf<Options> {
+            detectNewerJava = true
+        })
+        addGameVersion("Java 10") // hack
     })
 }
 
