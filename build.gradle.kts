@@ -53,7 +53,7 @@ repositories {
 dependencies {
     "deobfCompile"("mezz.jei:jei_$jeiMcVersion:$jeiVersion:api")
     "runtime"("mezz.jei:jei_$jeiMcVersion:$jeiVersion")
-    "compile"("curse.maven:pams-brewcraft:$brewCraftFileId")
+    "deobfCompile"("curse.maven:pams-brewcraft:$brewCraftFileId")
 }
 
 configure<UserBaseExtension> {
