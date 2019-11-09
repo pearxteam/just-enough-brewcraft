@@ -105,7 +105,7 @@ configure<CurseExtension> {
         changelog = modChangelog
         relations(closureOf<CurseRelation> {
             requiredDependency("jei")
-            requiredDependency("pams-harvestcraft")
+            requiredDependency("pams-brewcraft")
         })
         mainArtifact(tasks.named("jar").get(), closureOf<CurseArtifact> {
             displayName = "[$minecraftVersion] Just Enough BrewCraft $version"
