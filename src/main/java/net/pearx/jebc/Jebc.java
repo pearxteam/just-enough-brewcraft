@@ -3,14 +3,11 @@ package net.pearx.jebc;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Collections;
 
-@Mod(name = Jebc.NAME, modid = Jebc.MODID, version = Jebc.VERSION, acceptedMinecraftVersions = Jebc.ACCEPTED_MINECRAFT_VERSIONS, dependencies = Jebc.DEPENDENCIES, clientSideOnly = true)
-@SideOnly(Side.CLIENT)
+@Mod(name = Jebc.NAME, modid = Jebc.MODID, version = Jebc.VERSION, acceptedMinecraftVersions = Jebc.ACCEPTED_MINECRAFT_VERSIONS, dependencies = Jebc.DEPENDENCIES)
 public class Jebc {
     @Mod.Instance
     public static Jebc INSTANCE;

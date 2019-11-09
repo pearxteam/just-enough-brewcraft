@@ -1,4 +1,4 @@
-package net.pearx.jebc.jei;
+package net.pearx.jebc.jei.category.distiller;
 
 import com.pam.brewcraft.blocks.BlockRegistry;
 import com.pam.brewcraft.gui.ContainerDistiller;
@@ -9,19 +9,16 @@ import mezz.jei.api.IModRegistry;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.ingredients.VanillaTypes;
-import mezz.jei.api.recipe.IIngredientType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import net.pearx.jebc.Jebc;
+import net.pearx.jebc.jei.JebcRecipeCategory;
 import org.apache.commons.lang3.reflect.FieldUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-@SideOnly(Side.CLIENT)
 public class DistillerRecipeCategory extends JebcRecipeCategory<DistillerRecipeWrapper> {
     public DistillerRecipeCategory(IGuiHelper helper) {
         super("jehc.distiller", new ItemStack(BlockRegistry.distillerItemBlock), helper.drawableBuilder(new ResourceLocation("brewcraft", "textures/gui/distiller.png"), 33, 16, 123, 54).build());

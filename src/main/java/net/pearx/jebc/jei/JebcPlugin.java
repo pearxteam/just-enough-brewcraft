@@ -5,8 +5,7 @@ import mezz.jei.api.IModPlugin;
 import mezz.jei.api.IModRegistry;
 import mezz.jei.api.JEIPlugin;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.pearx.jebc.jei.category.distiller.DistillerRecipeCategory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.List;
  * Created by mrAppleXZ on 20.05.17 16:23.
  */
 @JEIPlugin
-@SideOnly(Side.CLIENT)
 public class JebcPlugin implements IModPlugin {
     private List<JebcRecipeCategory<?>> categories;
 

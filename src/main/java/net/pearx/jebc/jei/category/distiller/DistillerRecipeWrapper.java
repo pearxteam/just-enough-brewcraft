@@ -1,4 +1,4 @@
-package net.pearx.jebc.jei;
+package net.pearx.jebc.jei.category.distiller;
 
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.ingredients.VanillaTypes;
@@ -10,9 +10,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/*
- * Created by mrAppleXZ on 22.03.18 20:58.
- */
 public class DistillerRecipeWrapper implements IRecipeWrapper {
     private final ItemStack in;
     private final ItemStack[] out;
