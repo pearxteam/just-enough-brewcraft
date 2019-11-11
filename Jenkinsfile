@@ -1,4 +1,3 @@
-@Library('ci-skip') _
 pipeline {
     agent any
     stages {
