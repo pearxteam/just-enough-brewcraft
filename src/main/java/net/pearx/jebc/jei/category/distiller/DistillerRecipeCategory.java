@@ -68,10 +68,10 @@ public class DistillerRecipeCategory extends JebcRecipeCategory<DistillerRecipeW
         recipeLayout.getItemStacks().set(1, inputs.get(1));
         recipeLayout.getItemStacks().init(2, true, 22, 36);
         recipeLayout.getItemStacks().set(2, inputs.get(2));
-        recipeLayout.getItemStacks().init(3, false, 83, 19);
+        recipeLayout.getItemStacks().init(3, false, 82, 18);
         recipeLayout.getItemStacks().set(3, outputs.get(0));
         if (outputs.size() > 1) {
-            recipeLayout.getItemStacks().init(4, false, 102, 19);
+            recipeLayout.getItemStacks().init(4, false, 101, 18);
             recipeLayout.getItemStacks().set(4, outputs.get(1));
         }
     }
