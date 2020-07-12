@@ -10,7 +10,6 @@ plugins {
     id("net.minecraftforge.gradle.forge")
     id("com.matthewprenger.cursegradle")
     id("com.github.breadmoirai.github-release")
-    id("com.wynprice.cursemaven")
     `maven-publish`
 }
 
@@ -51,6 +50,7 @@ java {
 
 repositories {
     maven { url = uri("http://dvs1.progwml6.com/files/maven") }
+    maven { url = uri("https://www.cursemaven.com") }
 }
 
 dependencies {

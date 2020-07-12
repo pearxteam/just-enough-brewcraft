@@ -2,7 +2,6 @@ val forgeGradleVersion: String by settings
 val curseGradleVersion: String by settings
 val minecraftVersion: String by settings
 val githubReleaseVersion: String by settings
-val curseMavenVersion: String by settings
 
 
 val moduleMappings = mapOf(
@@ -12,8 +11,7 @@ val moduleMappings = mapOf(
 val versionMappings = mapOf(
     "net.minecraftforge.gradle.forge" to forgeGradleVersion,
     "com.matthewprenger.cursegradle" to curseGradleVersion,
-    "com.github.breadmoirai.github-release" to githubReleaseVersion,
-    "com.wynprice.cursemaven" to curseMavenVersion
+    "com.github.breadmoirai.github-release" to githubReleaseVersion
 )
 
 rootProject.name = "just-enough-brewcraft-$minecraftVersion"
