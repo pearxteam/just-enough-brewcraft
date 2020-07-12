@@ -34,7 +34,7 @@ public class Jebc {
         d.version = VERSION;
         d.modId = MODID;
         d.name = NAME;
-        d.logoFile = "logo.png";
+        d.logoFile = "assets/jebc/logo.png";
         d.url = "https://www.curseforge.com/minecraft/mc-mods/just-enough-brewcraft";
     }
 
